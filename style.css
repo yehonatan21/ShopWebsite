@@ -6,6 +6,11 @@
     height: auto;
 }
 
+article img {
+    width: 80px;
+    height: 100px
+}
+
 .container img {
     width: 700px;
     height: 150px
