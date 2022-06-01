@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+}
+
+.container img {
+    width: 700px;
+    height: 150px
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
