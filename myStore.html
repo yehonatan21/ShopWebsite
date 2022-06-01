@@ -10,24 +10,30 @@
 
 <body>
     <header>
+        <button>About Store</button>
+        <nav>
+            <ul>
+                <li><a href="">Payment</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Refound</a></li>
+                <li><a href="">Help center</a></li>
+            </ul>
+        </nav>
         <div>
-            <button>About</button>
-            <button>Payment</button>
-            <button>Shipping</button>
-            <button>Terms</button>
-            <button>Refound</button>
-            <button>Help center</button>
             <label>language:</label>
-            <select name="languages" size="2">
+            <select>
                 <option value="english">English</option>
                 <option value="hebrew">Hebrew</option>
             </select>
         </div>
+    </header>
+    <nav>
         <div>
             <img src="media/winelLogo.png" alt="Wine Shop Logo">
             <span>
                 <label>Categories:</label>
-                <select name="categories" size="2">
+                <select>
                     <option value="firstCategory">Category 1</option>
                     <option value="secondCategory">Category 2</option>
                 </select>
@@ -37,32 +43,35 @@
             </span>
             <label> 2 Items </label>
             <label>180$</label>
-            <select name="cart" size="2">
+            <select>
                 <option value="firstItem">Item 1</option>
                 <option value="secondItem">Item 2</option>
             </select>
         </div>
-        <div>
-            <label>Categories:</label>
-            <select name="categories" size="2">
-                <option value="firstCategory">Category 1</option>
-                <option value="secondCategory">Category 2</option>
-            </select>
-            <span>
-                <button>Brand</button>
-                <button>Brand 1</button>
-                <button>Brand 2</button>
-                <button>Brand 3</button>
-            </span>
-
-            <span>
+        <div class="categoreis">
+            <div class="left">
+                <label>Categories:</label>
+                <select>
+                    <option value="firstCategory">Category 1</option>
+                    <option value="secondCategory">Category 2</option>
+                </select>
+                <span>
+                    <!-- To make it list with radio buttons -->
+                    <button>Brand</button>
+                    <button>Brand 1</button>
+                    <button>Brand 2</button>
+                    <button>Brand 3</button>
+                </span>
+            </div>
+            <div>
+                <!-- To make it list with radio buttons -->
                 <button>Orders</button>
                 <button>Wishlist</button>
                 <button>Account</button>
                 <button>Logout</button>
-            </span>
+            </div>
         </div>
-    </header>
+    </nav>
     <main>
         <div class="container">
             <img src="media/beerAndWine.jpg" alt="beer and wine" />
@@ -70,58 +79,52 @@
         </div>
 
         <div>
+            <!-- To make it list buttons -->
             <button>Home</button>
             <button>Catalog</button>
             <button>Old Wine</button>
             <label>Sort By:</label>
-            <select name="sort" size="2">
+            <select>
                 <option value="popularity">Popularity</option>
                 <option value="price">Price</option>
             </select>
         </div>
         <article>
-            <img src="media/bottle.png" alt="bottle"/>
-            <h3>Blenders Pride</h3>
-            <p>some text about the drink</p>
-            <p>Price: 250$</p>
-            <button>Buy Now</button>
+            <figure>
+                <img src="media/bottle.png" alt="bottle" />
+            </figure>
+            <div>
+                <h3>Blenders Pride</h3>
+                <p>some text about the drink</p>
+                <p>Price: 250$</p>
+                <button>Buy Now</button>
+            </div>
         </article>
         <article>
-            <img src="media/bottle.png" alt="bottle"/>
-            <h3>Blenders Pride</h3>
-            <p>some text about the drink</p>
-            <p>Price: 250$</p>
-            <button>Buy Now</button>
+            <figure>
+                <img src="media/bottle.png" alt="bottle" />
+            </figure>
+            <div>
+                <h3>Blenders Pride</h3>
+                <p>some text about the drink</p>
+                <p>Price: 250$</p>
+                <button>Buy Now</button>
+            </div>
         </article>
         <article>
-            <img src="media/bottle.png" alt="bottle"/>
-            <h3>Blenders Pride</h3>
-            <p>some text about the drink</p>
-            <p>Price: 250$</p>
-            <button>Buy Now</button>
+            <figure>
+                <img src="media/bottle.png" alt="bottle" />
+            </figure>
+            <div>
+                <h3>Blenders Pride</h3>
+                <p>some text about the drink</p>
+                <p>Price: 250$</p>
+                <button>Buy Now</button>
+            </div>
         </article>
-        <article>
-            <img src="media/bottle.png" alt="bottle"/>
-            <h3>Blenders Pride</h3>
-            <p>some text about the drink</p>
-            <p>Price: 250$</p>
-            <button>Buy Now</button>
-        </article>
-        <article>
-            <img src="media/bottle.png" alt="bottle"/>
-            <h3>Blenders Pride</h3>
-            <p>some text about the drink</p>
-            <p>Price: 250$</p>
-            <button>Buy Now</button>
-        </article>
-        <article>
-            <img src="media/bottle.png" alt="bottle"/>
-            <h3>Blenders Pride</h3>
-            <p>some text about the drink</p>
-            <p>Price: 250$</p>
-            <button>Buy Now</button>
-        </article>
+
         <div>
+            <!-- To make it list buttons -->
             <button>Prev</button>
             <button>1</button>
             <button>2</button>
@@ -184,6 +187,7 @@
             </div>
             <div>
                 <p>Special</p>
+                <!-- To make it list buttons -->
                 <button>Spring Collection</button>
                 <button>2005 Collection</button>
                 <button>Our Special</button>
@@ -192,17 +196,19 @@
     </main>
     <footer>
         <div>
+            <!-- To make it list buttons -->
             <button>HOME</button>
             <button>CATALOT</button>
             <button>ORDERS</button>
             <button>WISHLIST</button>
             <button>ACCOUNT</button>
-            <select name="languages" size="2">
+            <select>
                 <option value="english">English</option>
                 <option value="hebrew">Hebrew</option>
             </select>
         </div>
         <div>
+            <!-- To make it list buttons -->
             <button>Payment</button>
             <button>Shipping</button>
             <button>Terms</button>
