@@ -4,6 +4,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     margin: 0;
+    padding: 5px;
 }
 
 button {
@@ -72,15 +73,14 @@ header {
     align-items: center;
 }
 
-.categoreis{
+header label {
+    position: relative;
+}
+
+.categoreis {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-
-header label {
-    position: relative;
 }
 
 article {
@@ -90,4 +90,44 @@ article {
 article div {
     padding: 10px;
     text-align: center;
+}
+
+footer div div,
+footer div select {
+    float: right;
+}
+
+footer .buttom,
+header {
+    opacity: 50%;
+}
+
+.mainNav {
+    background-color: blueviolet;
+}
+
+aside {
+    width: 250px;
+    background-color: rgb(170, 56, 56);
+    padding-top: 20px;
+}
+
+article {
+    background-color: coral;
+}
+
+aside,
+article {
+    display: inline-block;
+    vertical-align: top;
+    word-wrap: break-word;
+    margin: 10px;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+main {
+    background-color: rgb(241, 241, 241);
 }

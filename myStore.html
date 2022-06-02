@@ -28,7 +28,7 @@
             </select>
         </div>
     </header>
-    <nav>
+    <nav class="mainNav">
         <div>
             <img src="media/winelLogo.png" alt="Wine Shop Logo">
             <span>
@@ -56,7 +56,7 @@
                     <option value="secondCategory">Category 2</option>
                 </select>
                 <span>
-                    <!-- To make it list with radio buttons -->
+                    <!-- TODO: make it list with radio buttons -->
                     <button>Brand</button>
                     <button>Brand 1</button>
                     <button>Brand 2</button>
@@ -64,7 +64,7 @@
                 </span>
             </div>
             <div>
-                <!-- To make it list with radio buttons -->
+                <!-- TODO: make it list with radio buttons -->
                 <button>Orders</button>
                 <button>Wishlist</button>
                 <button>Account</button>
@@ -77,9 +77,8 @@
             <img src="media/beerAndWine.jpg" alt="beer and wine" />
             <div class="centered">Snacks & Beers</div>
         </div>
-
         <div>
-            <!-- To make it list buttons -->
+            <!-- TODO: make it list buttons -->
             <button>Home</button>
             <button>Catalog</button>
             <button>Old Wine</button>
@@ -89,42 +88,101 @@
                 <option value="price">Price</option>
             </select>
         </div>
-        <article>
-            <figure>
-                <img src="media/bottle.png" alt="bottle" />
-            </figure>
-            <div>
-                <h3>Blenders Pride</h3>
-                <p>some text about the drink</p>
-                <p>Price: 250$</p>
-                <button>Buy Now</button>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="media/bottle.png" alt="bottle" />
-            </figure>
-            <div>
-                <h3>Blenders Pride</h3>
-                <p>some text about the drink</p>
-                <p>Price: 250$</p>
-                <button>Buy Now</button>
-            </div>
-        </article>
-        <article>
-            <figure>
-                <img src="media/bottle.png" alt="bottle" />
-            </figure>
-            <div>
-                <h3>Blenders Pride</h3>
-                <p>some text about the drink</p>
-                <p>Price: 250$</p>
-                <button>Buy Now</button>
-            </div>
-        </article>
-
+        <div class="navBar">
+            <aside>
+                <div>
+                    <p>Price</p>
+                    <input type="range" min="60" max="2000" value="600">
+                </div>
+                <div>
+                    <form>
+                        <p>Brand:</p>
+                          <input type="radio">
+                          <label>Brand</label><br>
+                          <input type="radio">
+                          <label>Brand 1</label><br>
+                          <input type="radio">
+                          <label>Brand 2</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <p>Brands Type</p>
+                          <input type="radio">
+                          <label>Brand Type1</label><br>
+                          <input type="radio">
+                          <label>Brand Type2</label><br>
+                          <input type="radio">
+                          <label>Brand Type3</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <p>Collection</p>
+                          <input type="radio">
+                          <label>Collection Type1</label><br>
+                          <input type="radio">
+                          <label>Collection Type2</label><br>
+                          <input type="radio">
+                          <label>Collection Type3</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <p>Rating</p>
+                          <input type="radio">
+                          <label>3 Stars</label><br>
+                          <input type="radio">
+                          <label>3 -5 Stars</label><br>
+                          <input type="radio">
+                          <label>5 and More</label>
+                    </form>
+                </div>
+                <div>
+                    <p>Special</p>
+                    <ol>
+                        <il><button>Spring Collection</button></il>
+                        <il><button>2005 Collection</button></il>
+                        <il><button>Our Special</button></il>
+                    </ol>
+                </div>
+            </aside>
+            <article>
+                <figure>
+                    <img src="media/bottle.png" alt="bottle" />
+                </figure>
+                <div>
+                    <h3>Blenders Pride</h3>
+                    <p>some text about the drink</p>
+                    <p>Price: 250$</p>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="media/bottle.png" alt="bottle" />
+                </figure>
+                <div>
+                    <h3>Blenders Pride</h3>
+                    <p>some text about the drink</p>
+                    <p>Price: 250$</p>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="media/bottle.png" alt="bottle" />
+                </figure>
+                <div>
+                    <h3>Blenders Pride</h3>
+                    <p>some text about the drink</p>
+                    <p>Price: 250$</p>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+        </div>
         <div>
-            <!-- To make it list buttons -->
+            <!-- TODO: make it list buttons -->
             <button>Prev</button>
             <button>1</button>
             <button>2</button>
@@ -135,68 +193,10 @@
             <button>10</button>
             <button>Next</button>
         </div>
-        <aside>
-            <div>
-                <p>Price</p>
-                <input type="range" min="60" max="2000" value="600">
-            </div>
-            <div>
-                <form>
-                    <p>Brand:</p>
-                      <input type="radio">
-                      <label>Brand</label><br>
-                      <input type="radio">
-                      <label>Brand 1</label><br>
-                      <input type="radio">
-                      <label>Brand 2</label>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <p>Brands Type</p>
-                      <input type="radio">
-                      <label>Brand Type1</label><br>
-                      <input type="radio">
-                      <label>Brand Type2</label><br>
-                      <input type="radio">
-                      <label>Brand Type3</label>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <p>Collection</p>
-                      <input type="radio">
-                      <label>Collection Type1</label><br>
-                      <input type="radio">
-                      <label>Collection Type2</label><br>
-                      <input type="radio">
-                      <label>Collection Type3</label>
-                </form>
-            </div>
-
-            <div>
-                <form>
-                    <p>Rating</p>
-                      <input type="radio">
-                      <label>3 Stars</label><br>
-                      <input type="radio">
-                      <label>3 -5 Stars</label><br>
-                      <input type="radio">
-                      <label>5 and More</label>
-                </form>
-            </div>
-            <div>
-                <p>Special</p>
-                <!-- To make it list buttons -->
-                <button>Spring Collection</button>
-                <button>2005 Collection</button>
-                <button>Our Special</button>
-            </div>
-        </aside>
     </main>
     <footer>
         <div>
-            <!-- To make it list buttons -->
+            <!-- TODO: make it list buttons -->
             <button>HOME</button>
             <button>CATALOT</button>
             <button>ORDERS</button>
@@ -207,15 +207,15 @@
                 <option value="hebrew">Hebrew</option>
             </select>
         </div>
-        <div>
-            <!-- To make it list buttons -->
+        <div class="buttom">
+            <!-- TODO: make it list buttons -->
             <button>Payment</button>
             <button>Shipping</button>
             <button>Terms</button>
             <button>Refound</button>
             <button>Help center</button>
+            <div>Copyrights 2022</div>
         </div>
-        <p>Copyrights 2020</p>
     </footer>
 </body>
 
