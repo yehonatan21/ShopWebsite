@@ -3,8 +3,17 @@
 * {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    margin: 0;
+
+}
+
+:not(main, .container, .container img, html, header, body) {
     padding: 5px;
+}
+
+main,
+.container,
+.container img {
+    margin: 0;
 }
 
 button {
@@ -45,8 +54,8 @@ article img {
 }
 
 .container img {
-    width: 700px;
-    height: 150px
+    width: 100%;
+    height: 350px;
 }
 
 .centered {
@@ -54,6 +63,7 @@ article img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 50px;
 }
 
 li {
@@ -67,24 +77,52 @@ select {
     appearance: none;
 }
 
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #bebebe;
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none
 }
 
 header label {
     position: relative;
 }
 
-.categoreis {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header ul {
+    margin: 0px;
+}
+
+header button {
+    font-size: 16px;
+}
+
+.left div{
+    position: relative;
 }
 
 article {
     display: inline-block;
+}
+
+article:hover,
+nav div span button[type="submit"]:hover {
+    border: .5px solid #000000;
+
 }
 
 article div {
@@ -102,8 +140,18 @@ header {
     opacity: 50%;
 }
 
-.mainNav {
-    background-color: blueviolet;
+.logo .menu {
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+
+nav div span button[type="submit"] {
+    background-color: gold;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 aside {
@@ -130,4 +178,29 @@ article {
 
 main {
     background-color: rgb(241, 241, 241);
+}
+
+/*
+select {
+    border-radius: 3px;
+    font-size: 14px;
+    color: #000000;
+    background: url("media/dwonarrow.svg") no-repeat;
+    background-size: 15px;
+    background-position: right 5px top 50%;
+} */
+
+.logo img{
+    float: left;    
+}
+
+.categoreis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainNav span:not(.left span){
+position: relative;
+bottom: 37px;
 }
