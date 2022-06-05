@@ -10,74 +10,76 @@
 </head>
 
 <body>
-    <header class="topHeader">
-        <button class="aboutStore">About Store</button>
-        <nav>
-            <ul class="navBtnList">
-                <li><a href="">Payment</a></li>
-                <li><a href="">Shipping</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Refound</a></li>
-                <li><a href="">Help center</a></li>
-            </ul>
-        </nav>
-        <div>
-            <label for="topLngList">language:</label>
-            <select id="topLngList">
-                <option value="english">English</option>
-                <option value="hebrew">Hebrew</option>
-            </select>
-        </div>
-    </header>
-    <nav class="mainNav">
-        <!-- <div> -->
-        <img src="media/winelLogo.png" alt="Wine Shop Logo" />
-        <span class="up">
-            <!-- TODO: Remove unused class -->
-            <label>Categories:</label>
-            <select>
-                <option value="firstCategory">Category 1</option>
-                <option value="secondCategory">Category 2</option>
-            </select>
-            <input class="searchInput" type="text" placeholder="Search...">
-            <button class="searchBtn" type="submit"><i class="fa fa-search"></i>MAG</button>
-            <!-- TODO: Remove MAG once the FA is back -->
-            <!-- ask ohad about the i class="fa fa-search"-->
-        </span>
-        <span class="up">
-            <!-- TODO: Remove unused class -->
-            <label> 2 Items </label>
-            <label>180$</label>
-            <select>
-                <option value="firstItem">Item 1</option>
-                <option value="secondItem">Item 2</option>
-            </select>
-        </span>
-        <!-- </div> -->
-        <div class="categoreis">
-            <div class="left">
-                <label>Categories:</label>
-                <select>
-                    <option value="firstCategory">Category 1</option>
-                    <option value="secondCategory">Category 2</option>
-                </select>
-                <span>
-                    <!-- TODO: make it list with radio buttons -->
-                    <button>Brand</button>
-                    <button>Brand 1</button>
-                    <button>Brand 2</button>
-                    <button>Brand 3</button>
-                </span>
-            </div>
+    <header>
+        <span class="topHeader">
+            <button class="aboutStore">About Store</button>
+            <nav>
+                <ul class="navBtnList">
+                    <li><a href="">Payment</a></li>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Refound</a></li>
+                    <li><a href="">Help center</a></li>
+                </ul>
+            </nav>
             <div>
-                <!-- TODO: make it list with radio buttons -->
-                <button>Orders</button>
-                <button>Wishlist</button>
-                <button>Account</button>
-                <button>Logout</button>
+                <label for="topLngList">language:</label>
+                <select id="topLngList">
+                    <option value="english">English</option>
+                    <option value="hebrew">Hebrew</option>
+                </select>
             </div>
-        </div>
-    </nav>
+        </span>
+        <nav class="mainNav">
+            <span class="stLine">
+                <img src="media/winelLogo.png" alt="Wine Shop Logo" />
+                <span class="searchLine">
+                    <!-- TODO: Remove unused class -->
+                    <label>Categories:</label>
+                    <select>
+                        <option value="firstCategory">Category 1</option>
+                        <option value="secondCategory">Category 2</option>
+                    </select>
+                    <input class="searchInput" type="text" placeholder="Search...">
+                    <button class="searchBtn" type="submit"><i class="fa fa-search"></i>MAG</button>
+                    <!-- TODO: Remove MAG once the FA is back -->
+                    <!-- ask ohad about the i class="fa fa-search"-->
+                </span>
+                <span class="cart">
+                    <!-- TODO: Remove unused class -->
+                    <label> 2 Items </label>
+                    <label>180$</label>
+                    <select>
+                        <option value="firstItem">Item 1</option>
+                        <option value="secondItem">Item 2</option>
+                    </select>
+                </span>
+            </span>
+            <div class="categoreis">
+                <div class="left">
+                    <label>Categories:</label>
+                    <select>
+                        <option value="firstCategory">Category 1</option>
+                        <option value="secondCategory">Category 2</option>
+                    </select>
+                    <span>
+                        <!-- TODO: make it list with radio buttons -->
+                        <button>Brand</button>
+                        <button>Brand 1</button>
+                        <button>Brand 2</button>
+                        <button>Brand 3</button>
+                    </span>
+                </div>
+                <div>
+                    <!-- TODO: make it list with radio buttons -->
+                    <button>Orders</button>
+                    <button>Wishlist</button>
+                    <button>Account</button>
+                    <button>Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main class="centerMain">
         <div class="mainImg">
             <!-- Give a normal name to the class -->
@@ -188,7 +190,7 @@
                 <button class="productButton">Buy Now</button>
             </div>
         </article>
-        <div>
+        <div class="pageNav">
             <!-- TODO: make it list buttons -->
             <button>Prev</button>
             <button>1</button>
@@ -214,7 +216,7 @@
                 </ul>
                 <!--             </div> -->
             </nav>
-            <span class="spanSelectLang">
+            <span class="SelectLang">
                 <select class="selectLang">
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
