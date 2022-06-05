@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap'); */
 
 * {
     font-family: "Poppins", sans-serif;
@@ -6,15 +6,10 @@
 
 }
 
-:not(main, .container, .container img, html, header, body) {
+/* Delete all element styling. USE classes. */
+/* :not(main, .mainImg, .container img, html, header, body) {
     padding: 5px;
-}
-
-main,
-.container,
-.container img {
-    margin: 0;
-}
+} */
 
 button {
     border: none;
@@ -25,19 +20,14 @@ button:hover {
     cursor: pointer;
 }
 
-article:hover {
-    /* not working */
-    border: 5px;
-}
-
-article button {
+.productButton {
     color: white;
     background-color: red;
     border-radius: 25px;
 
 }
 
-.container {
+.mainImg {
     position: relative;
     text-align: center;
     color: white;
@@ -45,7 +35,7 @@ article button {
     height: auto;
 }
 
-article img {
+.productImg {
     width: 80px;
     height: 100px;
     display: block;
@@ -53,12 +43,8 @@ article img {
     margin-right: auto;
 }
 
-.container img {
-    width: 100%;
-    height: 350px;
-}
-
 .centered {
+    /* change img */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,13 +64,10 @@ select {
 }
 
 body {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 auto;
 }
 
-header {
+.topHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,54 +82,95 @@ a:visited {
     text-decoration: none
 }
 
-header label {
+.topLngList {
     position: relative;
 }
 
-header ul {
+.navBtnList {
+    padding: 0px;
     margin: 0px;
 }
 
-header button {
+.navBtnList li {
+    padding: 3px;
+}
+
+.navBtn {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line {
+    background-color: red;
+    display: flex;
+}
+
+.navBtn ul {
+    padding: 0;
+}
+
+.footerNav {
+    /* display: i; */
+    width: 80%;
+}
+
+.footerNav ul {
+    padding: 0px;
+    /* background-color: white;
+    width: 80%; */
+}
+
+.footerNavBtnList li {
+    padding: 3px;
+}
+
+.aboutStore {
     font-size: 16px;
 }
 
-.left div{
+.left div {
     position: relative;
 }
 
-article {
+.product {
     display: inline-block;
 }
 
-article:hover,
-nav div span button[type="submit"]:hover {
+.product:hover,
+.searchBtn:hover {
     border: .5px solid #000000;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 25px;
 
 }
 
-article div {
+.productDiscreption {
     padding: 10px;
     text-align: center;
 }
 
-footer div div,
-footer div select {
+.selectLang {
+    background-color: white;
+}
+
+.spanSelectLang {
+    background-color: red;
+    width: 20%;
+    text-align: right;
+}
+
+.copyrights {
     float: right;
 }
 
-footer .buttom,
+.footerButtom,
 header {
     opacity: 50%;
 }
 
-.logo .menu {
-    margin-top: 25px;
-    justify-content: space-between;
-}
-
-
-nav div span button[type="submit"] {
+.searchInput {
     background-color: gold;
     border-radius: 25px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
@@ -154,29 +178,25 @@ nav div span button[type="submit"] {
     padding-right: 20px;
 }
 
-aside {
+.navBar {
     width: 250px;
     background-color: rgb(170, 56, 56);
     padding-top: 20px;
 }
 
-article {
+.product {
     background-color: coral;
 }
 
-aside,
-article {
+.navBar,
+.product {
     display: inline-block;
     vertical-align: top;
     word-wrap: break-word;
     margin: 10px;
 }
 
-#wrapper {
-    text-align: center;
-}
-
-main {
+.centerMain {
     background-color: rgb(241, 241, 241);
 }
 
@@ -190,17 +210,13 @@ select {
     background-position: right 5px top 50%;
 } */
 
-.logo img{
-    float: left;    
-}
-
 .categoreis {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.mainNav span:not(.left span){
-position: relative;
-bottom: 37px;
+.up {
+    position: relative;
+    bottom: 37px;
 }
