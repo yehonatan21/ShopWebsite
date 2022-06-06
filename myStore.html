@@ -33,20 +33,19 @@
         <nav class="mainNav">
             <span class="stLine">
                 <img src="media/winelLogo.png" alt="Wine Shop Logo" />
-                <span class="searchLine">
-                    <!-- TODO: Remove unused class -->
-                    <label>Categories:</label>
-                    <select>
-                        <option value="firstCategory">Category 1</option>
-                        <option value="secondCategory">Category 2</option>
-                    </select>
-                    <input class="searchInput" type="text" placeholder="Search...">
-                    <button class="searchBtn" type="submit"><i class="fa fa-search"></i>MAG</button>
-                    <!-- TODO: Remove MAG once the FA is back -->
-                    <!-- ask ohad about the i class="fa fa-search"-->
+                <span class="searchFilter">
+                    <span class="searchFilterElements">
+                        <select>
+                            <option value="allCategories">All Category</option>
+                            <option value="firstCategory">Category 1</option>
+                            <option value="secondCategory">Category 2</option>
+                        </select>
+                        <input class="searchInput" type="text" placeholder="Search...">
+                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i>MAG</button>
+                        <!-- TODO: Remove MAG once the FA is back -->
+                    </span>
                 </span>
                 <span class="cart">
-                    <!-- TODO: Remove unused class -->
                     <label> 2 Items </label>
                     <label>180$</label>
                     <select>
@@ -55,19 +54,20 @@
                     </select>
                 </span>
             </span>
-            <div class="categoreis">
+            <span class="categoreis">
                 <div class="left">
-                    <label>Categories:</label>
                     <select>
+                        <option value="selectCategory">Select Category</option>
                         <option value="firstCategory">Category 1</option>
                         <option value="secondCategory">Category 2</option>
                     </select>
                     <span>
-                        <!-- TODO: make it list with radio buttons -->
-                        <button>Brand</button>
-                        <button>Brand 1</button>
-                        <button>Brand 2</button>
-                        <button>Brand 3</button>
+                        <ul class="popular">
+                            <li><a href="">Blender</a></li>
+                            <li><a href="">Blender1</a></li>
+                            <li><a href="">Blender2</a></li>
+                            <li><a href="">Blender3</a></li>
+                        </ul>
                     </span>
                 </div>
                 <div>
@@ -77,7 +77,7 @@
                     <button>Account</button>
                     <button>Logout</button>
                 </div>
-            </div>
+            </span>
         </nav>
     </header>
     <main class="centerMain">
@@ -85,111 +85,113 @@
             <!-- Give a normal name to the class -->
             <img src="media/beerAndWine.jpg" alt="beer and wine" />
             <span class="centered">Snacks & Beers</span>
+            <div class="sortBy">
+                <!-- TODO: make it list buttons -->
+                <!-- TODO: Usually it is being done with UL -->
+                <button>Home</button>
+                <button>Catalog</button>
+                <button>Old Wine</button>
+                <label for="select111">Sort By:</label>
+                <select id="select111">
+                    <option value="popularity">Popularity</option>
+                    <option value="price">Price</option>
+                </select>
+            </div>
         </div>
-        <div>
-            <!-- TODO: make it list buttons -->
-            <!-- TODO: Usually it is being done with UL -->
-            <button>Home</button>
-            <button>Catalog</button>
-            <button>Old Wine</button>
-            <label for="select111">Sort By:</label>
-            <select id="select111">
-                <option value="popularity">Popularity</option>
-                <option value="price">Price</option>
-            </select>
+        <div class="mainCenter">
+            <aside class="navBar">
+                <div>
+                    <p>Price</p>
+                    <input type="range" min="60" max="2000" value="600" />
+                </div>
+                <div>
+                    <form>
+                        <p>Brand:</p>
+                          <input type="radio">
+                          <label>Brand</label><br>
+                          <input type="radio">
+                          <label>Brand 1</label><br>
+                          <input type="radio">
+                          <label>Brand 2</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <p>Brands Type</p>
+                          <input type="radio">
+                          <label>Brand Type1</label><br>
+                          <input type="radio">
+                          <label>Brand Type2</label><br>
+                          <input type="radio">
+                          <label>Brand Type3</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <p>Collection</p>
+                          <input type="radio">
+                          <label>Collection Type1</label><br>
+                          <input type="radio">
+                          <label>Collection Type2</label><br>
+                          <input type="radio">
+                          <label>Collection Type3</label>
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <p>Rating</p>
+                          <input type="radio">
+                          <label>3 Stars</label><br>
+                          <input type="radio">
+                          <label>3 -5 Stars</label><br>
+                          <input type="radio">
+                          <label>5 and More</label>
+                    </form>
+                </div>
+                <div>
+                    <p>Special</p>
+                    <ol>
+                        <li><button>Spring Collection</button></li>
+                        <li><button>2005 Collection</button></li>
+                        <li><button>Our Special</button></li>
+                    </ol>
+                </div>
+            </aside>
+            <article class="product">
+                <figure>
+                    <img class="productImg" src="media/bottle.png" alt="bottle" />
+                </figure>
+                <div class="productDiscreption">
+                    <h3>Blenders Pride</h3>
+                    <!-- Why P? Maybe span? Something else? -->
+                    <p>some text about the drink</p>
+                    <p>Price: 250$</p>
+                    <button class="productButton">Buy Now</button>
+                </div>
+            </article>
+            <article class="product">
+                <figure>
+                    <img class="productImg" src="media/bottle.png" alt="bottle" />
+                </figure>
+                <div class="productDiscreption">
+                    <h3>Blenders Pride</h3>
+                    <p>some text about the drink</p>
+                    <p>Price: 250$</p>
+                    <button class="productButton">Buy Now</button>
+                </div>
+            </article>
+            <article class="product">
+                <figure>
+                    <img class="productImg" src="media/bottle.png" alt="bottle" />
+                </figure>
+                <div class="productDiscreption">
+                    <h3>Blenders Pride</h3>
+                    <p>some text about the drink</p>
+                    <p>Price: 250$</p>
+                    <button class="productButton">Buy Now</button>
+                </div>
+            </article>
         </div>
-        <aside class="navBar">
-            <div>
-                <p>Price</p>
-                <input type="range" min="60" max="2000" value="600" />
-            </div>
-            <div>
-                <form>
-                    <p>Brand:</p>
-                      <input type="radio">
-                      <label>Brand</label><br>
-                      <input type="radio">
-                      <label>Brand 1</label><br>
-                      <input type="radio">
-                      <label>Brand 2</label>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <p>Brands Type</p>
-                      <input type="radio">
-                      <label>Brand Type1</label><br>
-                      <input type="radio">
-                      <label>Brand Type2</label><br>
-                      <input type="radio">
-                      <label>Brand Type3</label>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <p>Collection</p>
-                      <input type="radio">
-                      <label>Collection Type1</label><br>
-                      <input type="radio">
-                      <label>Collection Type2</label><br>
-                      <input type="radio">
-                      <label>Collection Type3</label>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <p>Rating</p>
-                      <input type="radio">
-                      <label>3 Stars</label><br>
-                      <input type="radio">
-                      <label>3 -5 Stars</label><br>
-                      <input type="radio">
-                      <label>5 and More</label>
-                </form>
-            </div>
-            <div>
-                <p>Special</p>
-                <ol>
-                    <li><button>Spring Collection</button></li>
-                    <li><button>2005 Collection</button></li>
-                    <li><button>Our Special</button></li>
-                </ol>
-            </div>
-        </aside>
-        <article class="product">
-            <figure>
-                <img class="productImg" src="media/bottle.png" alt="bottle" />
-            </figure>
-            <div class="productDiscreption">
-                <h3>Blenders Pride</h3>
-                <!-- Why P? Maybe span? Something else? -->
-                <p>some text about the drink</p>
-                <p>Price: 250$</p>
-                <button class="productButton">Buy Now</button>
-            </div>
-        </article>
-        <article class="product">
-            <figure>
-                <img class="productImg" src="media/bottle.png" alt="bottle" />
-            </figure>
-            <div class="productDiscreption">
-                <h3>Blenders Pride</h3>
-                <p>some text about the drink</p>
-                <p>Price: 250$</p>
-                <button class="productButton">Buy Now</button>
-            </div>
-        </article>
-        <article class="product">
-            <figure>
-                <img class="productImg" src="media/bottle.png" alt="bottle" />
-            </figure>
-            <div class="productDiscreption">
-                <h3>Blenders Pride</h3>
-                <p>some text about the drink</p>
-                <p>Price: 250$</p>
-                <button class="productButton">Buy Now</button>
-            </div>
-        </article>
         <div class="pageNav">
             <!-- TODO: make it list buttons -->
             <button>Prev</button>
