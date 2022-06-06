@@ -6,7 +6,7 @@
     <title>My Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="media/winelLogo.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -23,11 +23,12 @@
                 </ul>
             </nav>
             <div>
-                <label for="topLngList">language:</label>
+                <label for="topLngList">language: 
+                </label>
                 <select id="topLngList">
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
-                </select>
+                </select><i class="fa fa-caret-down"></i>
             </div>
         </span>
         <nav class="mainNav">
@@ -39,7 +40,7 @@
                             <option value="allCategories">All Category</option>
                             <option value="firstCategory">Category 1</option>
                             <option value="secondCategory">Category 2</option>
-                        </select>
+                        </select><i class="fa fa-caret-down"></i>
                         <input class="searchInput" type="text" placeholder="Search...">
                         <button class="searchBtn" type="submit"><i class="fa fa-search"></i>MAG</button>
                         <!-- TODO: Remove MAG once the FA is back -->
@@ -51,7 +52,7 @@
                     <select>
                         <option value="firstItem">Item 1</option>
                         <option value="secondItem">Item 2</option>
-                    </select>
+                    </select><i class="fa fa-caret-down"></i>
                 </span>
             </span>
             <span class="categoreis">
@@ -60,7 +61,7 @@
                         <option value="selectCategory">Select Category</option>
                         <option value="firstCategory">Category 1</option>
                         <option value="secondCategory">Category 2</option>
-                    </select>
+                    </select><i class="fa fa-caret-down"></i>
                     <span>
                         <ul class="popular">
                             <li><a href="">Blender</a></li>
@@ -95,7 +96,7 @@
                 <select id="select111">
                     <option value="popularity">Popularity</option>
                     <option value="price">Price</option>
-                </select>
+                </select><i class="fa fa-caret-down"></i>
             </div>
         </div>
         <div class="mainCenter">
@@ -106,7 +107,7 @@
                 </div>
                 <div>
                     <form>
-                        <p>Brand:</p>
+                        <span>Brand:</span><br>
                           <input type="radio">
                           <label>Brand</label><br>
                           <input type="radio">
@@ -117,7 +118,7 @@
                 </div>
                 <div>
                     <form>
-                        <p>Brands Type</p>
+                        <span>Brands Type</span><br>
                           <input type="radio">
                           <label>Brand Type1</label><br>
                           <input type="radio">
@@ -128,7 +129,7 @@
                 </div>
                 <div>
                     <form>
-                        <p>Collection</p>
+                        <span>Collection</span><br>
                           <input type="radio">
                           <label>Collection Type1</label><br>
                           <input type="radio">
@@ -139,7 +140,7 @@
                 </div>
                 <div>
                     <form>
-                        <p>Rating</p>
+                        <span>Rating</span><br>
                           <input type="radio">
                           <label>3 Stars</label><br>
                           <input type="radio">
@@ -149,12 +150,12 @@
                     </form>
                 </div>
                 <div>
-                    <p>Special</p>
-                    <ol>
-                        <li><button>Spring Collection</button></li>
-                        <li><button>2005 Collection</button></li>
+                    <span>Special</span><br>
+                    <ul>
+                        <li><button>Spring Collection</button></li><br>
+                        <li><button>2005 Collection</button></li><br>
                         <li><button>Our Special</button></li>
-                    </ol>
+                    </ul>
                 </div>
             </aside>
             <article class="product">
@@ -169,6 +170,7 @@
                     <button class="productButton">Buy Now</button>
                 </div>
             </article>
+            
             <article class="product">
                 <figure>
                     <img class="productImg" src="media/bottle.png" alt="bottle" />
@@ -191,18 +193,18 @@
                     <button class="productButton">Buy Now</button>
                 </div>
             </article>
-        </div>
-        <div class="pageNav">
-            <!-- TODO: make it list buttons -->
-            <button>Prev</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>...</button>
-            <button>10</button>
-            <button>Next</button>
+            <div class="pageNav">
+                <!-- TODO: make it list buttons -->
+                <button>Prev</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>...</button>
+                <button>10</button>
+                <button>Next</button>
+            </div>
         </div>
     </main>
     <footer>
@@ -222,7 +224,7 @@
                 <select class="selectLang">
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
-                </select>
+                </select><i class="fa fa-caret-down"></i>
             </span>
         </div>
         <div class="line footerButtom">
