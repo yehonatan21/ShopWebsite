@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <span class="topHeader">
+        <div class="topHeader">
             <button class="aboutStore">About Store</button>
             <nav>
                 <ul class="navBtnList">
@@ -23,14 +23,14 @@
                 </ul>
             </nav>
             <div>
-                <label for="topLngList">language: 
+                <label for="topLngList">language:
                 </label>
                 <select id="topLngList">
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
                 </select><i class="fa fa-caret-down"></i>
             </div>
-        </span>
+        </div>
         <nav class="mainNav">
             <span class="stLine">
                 <img src="media/winelLogo.png" alt="Wine Shop Logo" />
@@ -55,21 +55,21 @@
                     </select><i class="fa fa-caret-down"></i>
                 </span>
             </span>
-            <span class="categoreis">
+            <div class="categoreis">
                 <div class="left">
                     <select>
                         <option value="selectCategory">Select Category</option>
                         <option value="firstCategory">Category 1</option>
                         <option value="secondCategory">Category 2</option>
                     </select><i class="fa fa-caret-down"></i>
-                    <span>
-                        <ul class="popular">
-                            <li><a href="">Blender</a></li>
-                            <li><a href="">Blender1</a></li>
-                            <li><a href="">Blender2</a></li>
-                            <li><a href="">Blender3</a></li>
-                        </ul>
-                    </span>
+                </div>
+                <div class="popularList">
+                    <span>Popular:</span>
+                    <ul class="popular">
+                        <li><a href="">Blender1</a></li>
+                        <li><a href="">Blender2</a></li>
+                        <li><a href="">Blender3</a></li>
+                    </ul>
                 </div>
                 <div>
                     <!-- TODO: make it list with radio buttons -->
@@ -78,7 +78,7 @@
                     <button>Account</button>
                     <button>Logout</button>
                 </div>
-            </span>
+            </div>
         </nav>
     </header>
     <main class="centerMain">
@@ -152,8 +152,8 @@
                 <div>
                     <span>Special</span><br>
                     <ul>
-                        <li><button>Spring Collection</button></li><br>
-                        <li><button>2005 Collection</button></li><br>
+                        <li><button>Spring Collection</button></li>
+                        <li><button>2005 Collection</button></li>
                         <li><button>Our Special</button></li>
                     </ul>
                 </div>
@@ -170,7 +170,7 @@
                     <button class="productButton">Buy Now</button>
                 </div>
             </article>
-            
+
             <article class="product">
                 <figure>
                     <img class="productImg" src="media/bottle.png" alt="bottle" />
@@ -196,13 +196,15 @@
             <div class="pageNav">
                 <!-- TODO: make it list buttons -->
                 <button>Prev</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>...</button>
-                <button>10</button>
+                <ul>
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href="">10</a></li>
+                </ul>
                 <button>Next</button>
             </div>
         </div>
