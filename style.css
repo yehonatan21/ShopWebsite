@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
 * {
     font-family: "Poppins", sans-serif;
@@ -47,7 +47,7 @@ button:hover {
     /* change img */
     position: absolute;
     color: white;
-    top: 50%;
+    margin-top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
@@ -90,11 +90,12 @@ a:visited {
 }
 
 .popularList span{
+    display: inline;
     opacity: 40%;
 }
 
 .popularList{
-    display: inline-block;
+    display:inline;
     margin-right: 40%;
 }
 
@@ -164,7 +165,8 @@ input[type="range"]::after {
 }
 
 .popular {
-    display: inline;
+    margin: 0%;
+    display: inline-block;
     padding: 0;
 }
 
@@ -260,7 +262,7 @@ input[type="range"]::after {
     position: absolute;
     padding-top: 1%;
     padding-bottom: 1%;
-    top: 95%;
+    top: 460px;
     left: 35%;
     padding-left: 2%;
     padding-right: 2%;
@@ -288,19 +290,25 @@ input[type="range"]::after {
     justify-content: space-between;
 }
 
-.mainImg img {
-    position: relative;
+.mainImg {
+    position: absolute;
+    right: 0;
+    left: 0;
     width: 100%;
     height: 300px;
 }
 
 .pageNav {
+    position: absolute;
+    left: 27%;
+    right: 2%;
+    bottom: 1.1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
-    border-radius: 25px;
+    border-radius: 35px;
     background-color: rgb(114, 31, 31);
 }
 
@@ -309,5 +317,9 @@ input[type="range"]::after {
 }
 
 .mainCenter {
-    margin-top: 2%;
+    position: relative;
+    padding-top: 320px;
+}
+.left{
+    display: inline;
 }

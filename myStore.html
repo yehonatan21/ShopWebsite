@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="media/winelLogo.png" type="image/x-icon">
@@ -42,7 +43,7 @@
                             <option value="secondCategory">Category 2</option>
                         </select><i class="fa fa-caret-down"></i>
                         <input class="searchInput" type="text" placeholder="Search...">
-                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i>MAG</button>
+                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                         <!-- TODO: Remove MAG once the FA is back -->
                     </span>
                 </span>
@@ -57,11 +58,11 @@
             </span>
             <div class="categoreis">
                 <div class="left">
-                    <select>
+                    <i class="fa fa-caret-down"></i><select>
                         <option value="selectCategory">Select Category</option>
                         <option value="firstCategory">Category 1</option>
                         <option value="secondCategory">Category 2</option>
-                    </select><i class="fa fa-caret-down"></i>
+                    </select>
                 </div>
                 <div class="popularList">
                     <span>Popular:</span>
@@ -72,33 +73,34 @@
                     </ul>
                 </div>
                 <div>
-                    <!-- TODO: make it list with radio buttons -->
-                    <button>Orders</button>
-                    <button>Wishlist</button>
-                    <button>Account</button>
-                    <button>Logout</button>
+                    <ul class="popular">
+                        <li><a href="">Orders</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main class="centerMain">
-        <div class="mainImg">
-            <!-- Give a normal name to the class -->
-            <img src="media/beerAndWine.jpg" alt="beer and wine" />
-            <span class="centered">Snacks & Beers</span>
-            <div class="sortBy">
-                <!-- TODO: make it list buttons -->
-                <!-- TODO: Usually it is being done with UL -->
-                <button>Home</button>
-                <button>Catalog</button>
-                <button>Old Wine</button>
-                <label for="select111">Sort By:</label>
-                <select id="select111">
-                    <option value="popularity">Popularity</option>
-                    <option value="price">Price</option>
-                </select><i class="fa fa-caret-down"></i>
-            </div>
+        <!-- <div class="mainImg"> -->
+        <!-- Give a normal name to the class -->
+        <img src="media/beerAndWine.jpg" alt="beer and wine" class="mainImg" />
+        <span class="centered">Snacks & Beers</span>
+        <div class="sortBy">
+            <!-- TODO: make it list buttons -->
+            <!-- TODO: Usually it is being done with UL -->
+            <button>Home</button>
+            <button>Catalog</button>
+            <button>Old Wine</button>
+            <label for="select111">Sort By:</label>
+            <select id="select111">
+                <option value="popularity">Popularity</option>
+                <option value="price">Price</option>
+            </select><i class="fa fa-caret-down"></i>
         </div>
+        <!-- </div> -->
         <div class="mainCenter">
             <aside class="navBar">
                 <div>
@@ -170,7 +172,6 @@
                     <button class="productButton">Buy Now</button>
                 </div>
             </article>
-
             <article class="product">
                 <figure>
                     <img class="productImg" src="media/bottle.png" alt="bottle" />
@@ -194,7 +195,6 @@
                 </div>
             </article>
             <div class="pageNav">
-                <!-- TODO: make it list buttons -->
                 <button>Prev</button>
                 <ul>
                     <li><a href="">1</a></li>
@@ -212,7 +212,6 @@
     <footer>
         <div class="line">
             <nav class="footerNav">
-                <!--             <div class="navBtn"> -->
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">CATALOT</a></li>
@@ -220,7 +219,6 @@
                     <li><a href="">WISHLIST</a></li>
                     <li><a href="">ACCOUNT</a></li>
                 </ul>
-                <!--             </div> -->
             </nav>
             <span class="SelectLang">
                 <select class="selectLang">
@@ -229,7 +227,7 @@
                 </select><i class="fa fa-caret-down"></i>
             </span>
         </div>
-        <div class="line footerButtom">
+        <div class="footerButtom">
             <!-- TODO: make it list buttons -->
             <button>Payment</button>
             <button>Shipping</button>
