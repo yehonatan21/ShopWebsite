@@ -84,7 +84,6 @@
         </nav>
     </header>
     <main class="centerMain">
-        <!-- <div class="mainImg"> -->
         <!-- Give a normal name to the class -->
         <img src="media/beerAndWine.jpg" alt="beer and wine" class="mainImg" />
         <span class="centered">Snacks & Beers</span>
@@ -100,65 +99,94 @@
                 <option value="price">Price</option>
             </select><i class="fa fa-caret-down"></i>
         </div>
-        <!-- </div> -->
         <div class="mainCenter">
             <aside class="navBar">
-                <div>
-                    <p>Price</p>
-                    <input type="range" min="60" max="2000" value="600" />
-                </div>
-                <div>
-                    <form>
-                        <span>Brand:</span><br>
-                          <input type="radio">
-                          <label>Brand</label><br>
-                          <input type="radio">
-                          <label>Brand 1</label><br>
-                          <input type="radio">
-                          <label>Brand 2</label>
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <span>Brands Type</span><br>
-                          <input type="radio">
-                          <label>Brand Type1</label><br>
-                          <input type="radio">
-                          <label>Brand Type2</label><br>
-                          <input type="radio">
-                          <label>Brand Type3</label>
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <span>Collection</span><br>
-                          <input type="radio">
-                          <label>Collection Type1</label><br>
-                          <input type="radio">
-                          <label>Collection Type2</label><br>
-                          <input type="radio">
-                          <label>Collection Type3</label>
-                    </form>
-                </div>
-                <div>
-                    <form>
-                        <span>Rating</span><br>
-                          <input type="radio">
-                          <label>3 Stars</label><br>
-                          <input type="radio">
-                          <label>3 -5 Stars</label><br>
-                          <input type="radio">
-                          <label>5 and More</label>
-                    </form>
-                </div>
-                <div>
-                    <span>Special</span><br>
-                    <ul>
-                        <li><button>Spring Collection</button></li>
-                        <li><button>2005 Collection</button></li>
-                        <li><button>Our Special</button></li>
-                    </ul>
-                </div>
+                <span class="priceContainer">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">Price</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <input type="range" min="60" max="2000" value="600" />
+                        </div>
+                    </div>
+                </span>
+                <span class="brandContainer">
+                    <input id="brandCollapsible" class="toggle" type="checkbox">
+                    <label for="brandCollapsible" class="lbl-toggle">Brand</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <form>
+                                  <input type="radio">
+                                  <label>Brand</label><br>
+                                  <input type="radio">
+                                  <label>Brand 1</label><br>
+                                  <input type="radio">
+                                  <label>Brand 2</label>
+                            </form>
+                        </div>
+                    </div>
+                </span>
+                <span class="brandTypeContainer">
+                    <input id="brandcoTypeCollapsible" class="toggle" type="checkbox">
+                    <label for="brandcoTypeCollapsible" class="lbl-toggle">Brand Type</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <form>
+                                  <input type="radio">
+                                  <label>Brand Type1</label><br>
+                                  <input type="radio">
+                                  <label>Brand Type2</label><br>
+                                  <input type="radio">
+                                  <label>Brand Type3</label>
+                            </form>
+                        </div>
+                    </div>
+                </span>
+                <span class="collectionContainer">
+                    <input id="collectionCollapsible" class="toggle" type="checkbox">
+                    <label for="collectionCollapsible" class="lbl-toggle">Collection</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <form>
+                                  <input type="radio">
+                                  <label>Collection Type1</label><br>
+                                  <input type="radio">
+                                  <label>Collection Type2</label><br>
+                                  <input type="radio">
+                                  <label>Collection Type3</label>
+                            </form>
+                        </div>
+                    </div>
+                </span>
+                <span class="ratingContainer">
+                    <input id="ratingCollapsible" class="toggle" type="checkbox">
+                    <label for="ratingCollapsible" class="lbl-toggle">Rating</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <form>
+                                <input type="radio">
+                                  <label>3 Stars</label><br>
+                                  <input type="radio">
+                                  <label>3 -5 Stars</label><br>
+                                  <input type="radio">
+                                  <label>5 and More</label>
+                            </form>
+                        </div>
+                    </div>
+                </span>
+                <span class="specialContainer">
+                    <input id="specialContainer" class="toggle" type="checkbox">
+                    <label for="specialContainer" class="lbl-toggle">Special</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <ul>
+                                <li><button>Spring Collection</button></li>
+                                <li><button>2005 Collection</button></li>
+                                <li><button>Our Special</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
             </aside>
             <article class="product">
                 <figure>
