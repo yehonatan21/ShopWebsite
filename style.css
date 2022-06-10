@@ -13,8 +13,8 @@ button {
 }
 
 body {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 button:hover {
@@ -137,6 +137,8 @@ input[type="range"]::before {
     transform: translateX(calc(-100% - 5px));
 }
 
+
+
 input[type="range"]::after {
     content: attr(max);
     right: 0%;
@@ -219,11 +221,15 @@ input[type="range"]::after {
     border: none;
 }
 
+.searchInput::before {
+    content: "|";
+}
+
 .navBar {
     display: flex;
+    position: absolute;
     width: 250px;
     background-color: rgb(255, 255, 255);
-    padding-top: 20px;
     border-radius: 10px;
     padding-left: 2%;
 }
@@ -237,12 +243,17 @@ input[type="range"]::after {
     box-shadow: 0 2px 6px 0 rgba(36, 13, 13, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
     display: inline-block;
     vertical-align: top;
-    /* word-wrap: break-word; */
     margin: 10px;
 }
 
 .centerMain {
+    padding-left: 4%;
     background-color: rgb(246, 246, 246);
+}
+
+.mainImg img {
+    width: 100% !important;
+    height: 45%;
 }
 
 .categoreis {
@@ -259,18 +270,33 @@ input[type="range"]::after {
 
 .sortBy {
     position: absolute;
+    top: 65%;
     padding-top: 1%;
     padding-bottom: 1%;
-    top: 460px;
-    left: 35%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 20%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 60%;
     background-color: rgb(255, 255, 255);
     border-radius: 35px;
     box-shadow: 0 2px 6px 0 rgba(36, 13, 13, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgNav {
+    opacity: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.sortBySelect {
+    opacity: 50%;
+}
+
+#select111 {
+    color: blue;
 }
 
 .searchFilter {
@@ -281,7 +307,6 @@ input[type="range"]::after {
     box-shadow: 0 2px 6px 0 rgba(36, 13, 13, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-top: 0.5%;
 }
 
 .stLine {
@@ -298,15 +323,14 @@ input[type="range"]::after {
 }
 
 .pageNav {
-    position: absolute;
-    left: 27%;
-    right: 2%;
-    bottom: 1.1%;
+    margin-left: 28%;
+    width: 68%;
+    bottom: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     border-radius: 35px;
     box-shadow: 0 2px 6px 0 rgba(36, 13, 13, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
     background-color: rgb(255, 255, 255);
@@ -318,18 +342,30 @@ input[type="range"]::after {
 
 .mainCenter {
     position: relative;
-    padding-top: 320px;
+    padding-top: 30%;
+}
+
+.productsContainerLine {
+    display: inline;
+    margin-left: 28%;
 }
 
 .left {
     display: inline;
 }
 
-#collapsible, #brandCollapsible, #brandcoTypeCollapsible, #collectionCollapsible, #ratingCollapsible, #specialContainer {
+#collapsible,
+#brandCollapsible,
+#brandcoTypeCollapsible,
+#collectionCollapsible,
+#ratingCollapsible,
+#specialContainer {
     display: none;
 }
 
 .lbl-toggle {
+    padding-bottom: 5%;
+    padding-top: 5%;
     display: block;
     text-align: left;
     cursor: pointer;
@@ -337,7 +373,6 @@ input[type="range"]::after {
 
 .lbl-toggle::after {
     content: ' ';
-
     float: right;
     margin-right: 10%;
     margin-top: 4%;
@@ -353,7 +388,8 @@ input[type="range"]::after {
     transform: rotate(180deg) translateX(-3px);
 }
 
-.collapsible-content {
+.collapsible-content,
+.collapsible-content-special {
     max-height: 0px;
     overflow: hidden;
     transition: max-height .25s ease-in-out;
@@ -363,6 +399,21 @@ input[type="range"]::after {
     max-height: 100vh;
 }
 
+.toggle:checked+.lbl-toggle+.collapsible-content-special {
+    max-height: 100vh;
+}
+
 .content-inner {
     padding: 0;
+}
+
+.collapsible-content {
+    border-bottom: 1px solid #bebebe;
+    padding-left: 0%;
+}
+
+.footerButtomNavList {
+    display: inline;
+    padding: 0;
+    margin: 0;
 }
