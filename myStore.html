@@ -29,7 +29,7 @@
                 <select id="topLngList">
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
-                </select><i class="fa fa-caret-down"></i>
+                </select><i class=" fa fa-caret-down"></i>
             </div>
         </div>
         <nav class="mainNav">
@@ -37,12 +37,14 @@
                 <img src="media/winelLogo.png" alt="Wine Shop Logo" />
                 <span class="searchFilter">
                     <span class="searchFilterElements">
-                        <select>
-                            <option value="allCategories">All Category</option>
-                            <option value="firstCategory">Category 1</option>
-                            <option value="secondCategory">Category 2</option>
-                        </select><i class="fa fa-caret-down"></i>
-                        <input class="searchInput" type="text" placeholder="Search For Product">
+                        <span class="searchFilterElements">
+                            <select>
+                                <option value="allCategories">All Category</option>
+                                <option value="firstCategory">Category 1</option>
+                                <option value="secondCategory">Category 2</option>
+                            </select><i class="fa fa-caret-down"></i>
+                            <input class="searchInput" type="text" placeholder="Search For Product">
+                        </span>
                         <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                     </span>
                 </span>
@@ -71,14 +73,12 @@
                         <li><a href="">Blender3</a></li>
                     </ul>
                 </div>
-                <div>
-                    <ul class="popular">
-                        <li><a href="">Orders</a></li>
-                        <li><a href="">Wishlist</a></li>
-                        <li><a href="">Account</a></li>
-                        <li><a href="">Logout</a></li>
-                    </ul>
-                </div>
+                <ul class="popular">
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Wishlist</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -87,13 +87,13 @@
         <img src="media/beerAndWine.jpg" alt="beer and wine" class="mainImg" />
         <span class="centered">Snacks & Beers</span>
         <div class="sortBy">
-            <span>
+            <div>
                 <ul class="imgNav">
                     <li><a href="">Home -</a></li>
                     <li><a href="">Catalog -</a></li>
                     <li><a href="">Old Wine</a></li>
                 </ul>
-            </span>
+            </div>
             <span>
                 <label for="select111" class="sortBySelect">Sort By:</label>
                 <select id="select111">
@@ -104,7 +104,7 @@
         </div>
         <div class="mainCenter">
             <aside class="navBar">
-                <span class="priceContainer">
+                <div class="priceContainer">
                     <input id="collapsible" class="toggle" type="checkbox">
                     <label for="collapsible" class="lbl-toggle">Price</label>
                     <div class="collapsible-content">
@@ -112,8 +112,8 @@
                             <input type="range" min="60" max="2000" value="600" />
                         </div>
                     </div>
-                </span>
-                <span class="brandContainer">
+                </div>
+                <div class="brandContainer">
                     <input id="brandCollapsible" class="toggle" type="checkbox">
                     <label for="brandCollapsible" class="lbl-toggle">Brand</label>
                     <div class="collapsible-content">
@@ -128,8 +128,8 @@
                             </form>
                         </div>
                     </div>
-                </span>
-                <span class="brandTypeContainer">
+                </div>
+                <div class="brandTypeContainer">
                     <input id="brandcoTypeCollapsible" class="toggle" type="checkbox">
                     <label for="brandcoTypeCollapsible" class="lbl-toggle">Brand Type</label>
                     <div class="collapsible-content">
@@ -144,8 +144,8 @@
                             </form>
                         </div>
                     </div>
-                </span>
-                <span class="collectionContainer">
+                </div>
+                <div class="collectionContainer">
                     <input id="collectionCollapsible" class="toggle" type="checkbox">
                     <label for="collectionCollapsible" class="lbl-toggle">Collection</label>
                     <div class="collapsible-content">
@@ -160,8 +160,8 @@
                             </form>
                         </div>
                     </div>
-                </span>
-                <span class="ratingContainer">
+                </div>
+                <div class="ratingContainer">
                     <input id="ratingCollapsible" class="toggle" type="checkbox">
                     <label for="ratingCollapsible" class="lbl-toggle">Rating</label>
                     <div class="collapsible-content">
@@ -176,8 +176,8 @@
                             </form>
                         </div>
                     </div>
-                </span>
-                <span class="specialContainer">
+                </div>
+                <div class="specialContainer">
                     <input id="specialContainer" class="toggle" type="checkbox">
                     <label for="specialContainer" class="lbl-toggle">Special</label>
                     <div class="collapsible-content-special">
@@ -189,9 +189,9 @@
                             </ul>
                         </div>
                     </div>
-                </span>
+                </div>
             </aside>
-            <span class="productsContainerLine">
+            <div class="productsContainerLine">
                 <article class="product">
                     <figure>
                         <img class="productImg" src="media/bottle.png" alt="bottle" />
@@ -226,8 +226,8 @@
                         <button class="productButton">Buy Now</button>
                     </div>
                 </article>
-            </span>
-            <span class="productsContainerLine">
+            </div>
+            <div class="productsContainerLine">
                 <article class="product">
                     <figure>
                         <img class="productImg" src="media/bottle.png" alt="bottle" />
@@ -261,8 +261,7 @@
                         <button class="productButton">Buy Now</button>
                     </div>
                 </article>
-
-            </span>
+            </div>
             <div class="pageNav">
                 <button>Prev</button>
                 <ul>
