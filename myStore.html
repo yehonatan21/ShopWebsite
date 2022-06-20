@@ -32,14 +32,14 @@
                 </select><i class=" fa fa-caret-down"></i>
             </div>
         </div>
-        <nav class="mainNav">
+        <nav>
             <span class="stLine">
                 <img src="media/winelLogo.png" alt="Wine Shop Logo" />
                 <span class="searchFilter">
-                    <span class="searchFilterElements">
-                        <span class="searchFilterElements">
+                    <span>
+                        <span>
                             <select>
-                                <option value="allCategories">All Category</option>
+                                <option value="allCategories">ALL CATEGORIES</option>
                                 <option value="firstCategory">Category 1</option>
                                 <option value="secondCategory">Category 2</option>
                             </select><i class="fa fa-caret-down"></i>
@@ -48,7 +48,7 @@
                         <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                     </span>
                 </span>
-                <span class="cart">
+                <span>
                     <label> 2 Items </label>
                     <label>180$</label>
                     <select>
@@ -65,21 +65,23 @@
                         <option value="firstCategory">Category 1</option>
                         <option value="secondCategory">Category 2</option>
                     </select>
-                    <div class="popularList">
+                    <nav class="popularList">
                         <span>Popular:</span>
                         <ul class="popular">
                             <li><a href="">Blender1</a></li>
                             <li><a href="">Blender2</a></li>
                             <li><a href="">Blender3</a></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
-                <ul class="popular">
-                    <li><a href="">Orders</a></li>
-                    <li><a href="">Wishlist</a></li>
-                    <li><a href="">Account</a></li>
-                    <li><a href="">Logout</a></li>
-                </ul>
+                <nav>
+                    <ul class="personal-area">
+                        <li><a href="">Orders</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </nav>
             </div>
         </nav>
     </header>
@@ -90,8 +92,8 @@
         <div class="sortBy">
             <div>
                 <ul class="imgNav">
-                    <li><a href="">Home -</a></li>
-                    <li><a href="">Catalog -</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Catalog</a></li>
                     <li><a href="">Old Wine</a></li>
                 </ul>
             </div>
@@ -105,7 +107,7 @@
         </div>
         <div class="mainCenter">
             <aside class="navBar">
-                <div class="priceContainer">
+                <div>
                     <input id="collapsible" class="toggle" type="checkbox">
                     <label for="collapsible" class="lbl-toggle">Price</label>
                     <div class="collapsible-content">
@@ -265,7 +267,7 @@
             </div>
             <div class="pageNav">
                 <button>Prev</button>
-                <ul>
+                <ul class="pages">
                     <li><a href="">1</a></li>
                     <li><a href="">2</a></li>
                     <li><a href="">3</a></li>
@@ -290,7 +292,7 @@
                 </ul>
             </nav>
             <span class="SelectLang">
-                <select class="selectLang">
+                <select>
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
                 </select><i class="fa fa-caret-down"></i>
