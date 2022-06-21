@@ -24,9 +24,7 @@
                 </ul>
             </nav>
             <div>
-                <label for="topLngList">language:
-                </label>
-                <select id="topLngList">
+                <select class="top-lang-select">
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
                 </select><i class=" fa fa-caret-down"></i>
@@ -34,7 +32,7 @@
         </div>
         <nav>
             <span class="stLine">
-                <img src="media/winelLogo.png" alt="Wine Shop Logo" />
+                <img src="media/winelLogo.png" class="wine-logo" alt="Wine Shop Logo" />
                 <span class="searchFilter">
                     <span>
                         <span>
@@ -51,10 +49,12 @@
                 <span>
                     <label> 2 Items </label>
                     <label>180$</label>
-                    <select>
-                        <option value="firstItem">Item 1</option>
-                        <option value="secondItem">Item 2</option>
-                    </select><i class="fa fa-caret-down"></i>
+                    <span class="cart-items">
+                        <select>
+                            <option value="firstItem">Item 1</option>
+                            <option value="secondItem">Item 2</option>
+                        </select><i class="fa fa-caret-down"></i>
+                    </span>
                 </span>
             </span>
             <div class="categoreis">
@@ -230,7 +230,7 @@
                     </div>
                 </article>
             </div>
-            <div class="productsContainerLine">
+            <div class="productsContainerLine line-2">
                 <article class="product">
                     <figure>
                         <img class="productImg" src="media/bottle.png" alt="bottle" />
@@ -291,7 +291,7 @@
                     <li><a href="">ACCOUNT</a></li>
                 </ul>
             </nav>
-            <span class="SelectLang">
+            <span class="buttom-lang-select">
                 <select>
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
