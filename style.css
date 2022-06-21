@@ -349,7 +349,7 @@ input[type="range"]::after {
     padding: 0;
 }
 
-.line-2{
+.line-2 {
     display: none;
 }
 
@@ -491,22 +491,21 @@ input[type="range"]::after {
         width: 20%;
     }
 
-    .productsContainerLine {
+    .productsContainerLine,
+    .line-2 {
         display: flex;
         justify-content: space-between;
         margin-left: 22%;
         margin-right: 5%;
     }
 
-    .productsContainerLine > .product{
+    .productsContainerLine>.product {
         margin-left: 3%;
     }
 
-    .line-2{
-        display:flex;
-        justify-content: space-between;
+    .product{
+        margin-bottom: 5%;
     }
-
 }
 
 @media screen and (min-width: 1300px) {
