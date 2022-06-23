@@ -12,28 +12,28 @@
 
 <body>
     <header>
-        <div class="topHeader">
-            <button class="aboutStore">About Store</button>
+        <div class="nav-header">
+            <button class="about-store">About Store</button>
             <nav>
-                <ul class="navBtnList">
+                <ul class="shop-service">
                     <li><a href="">Payment</a></li>
                     <li><a href="">Shipping</a></li>
-                    <li><a href="">Terms</a></li>
+                    <li><a href="">Terms</a>    </li>
                     <li><a href="">Refound</a></li>
                     <li><a href="">Help center</a></li>
                 </ul>
             </nav>
             <div>
-                <select class="top-lang-select">
+                <select class="top-lang-selector">
                     <option value="english">English</option>
                     <option value="hebrew">Hebrew</option>
                 </select><i class=" fa fa-caret-down"></i>
             </div>
         </div>
         <nav>
-            <span class="stLine">
-                <img src="media/winelLogo.png" class="wine-logo" alt="Wine Shop Logo" />
-                <span class="searchFilter">
+            <span class="cart-container">
+                <img src="media/winelLogo.png" class="wineshop-logo" alt="Wine Shop Logo" />
+                <span class="search-filter">
                     <span>
                         <span>
                             <select>
@@ -41,9 +41,9 @@
                                 <option value="firstCategory">Category 1</option>
                                 <option value="secondCategory">Category 2</option>
                             </select><i class="fa fa-caret-down"></i>
-                            <input class="searchInput" type="text" placeholder="Search For Product">
+                            <input class="search-input" type="text" placeholder="Search For Product">
                         </span>
-                        <button class="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                        <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
                     </span>
                 </span>
                 <span>
@@ -58,16 +58,16 @@
                 </span>
             </span>
             <div class="categoreis">
-                <div class="left">
+                <div>
                     <i class="fa fa-caret-down"></i>
                     <select>
                         <option value="selectCategory">Select Category</option>
                         <option value="firstCategory">Category 1</option>
                         <option value="secondCategory">Category 2</option>
                     </select>
-                    <nav class="popularList">
-                        <span>Popular:</span>
-                        <ul class="popular">
+                    <nav class="popular-filter-contianer">
+                        <span class="popular-filter-lable">Popular:</span>
+                        <ul class="blender-list">
                             <li><a href="">Blender1</a></li>
                             <li><a href="">Blender2</a></li>
                             <li><a href="">Blender3</a></li>
@@ -85,34 +85,37 @@
             </div>
         </nav>
     </header>
-    <main class="centerMain">
-        <!-- Give a normal name to the class -->
-        <img src="media/beerAndWine.jpg" alt="beer and wine" class="mainImg" />
-        <span class="centered">Snacks & Beers</span>
-        <div class="sortBy">
+    <main class="page-contianer">
+        <img src="media/beerAndWine.jpg" class="snacks-beer-img" alt="beer and wine"/>
+        <div class="snacks-beer-container">
+            <div class="snacks">Snacks</div> 
+            <div class="and">&</div>
+            <div class="beers">Beers</div>
+        </div>
+        <div class="sort-by-filter">
             <div>
-                <ul class="imgNav">
+                <ul class="sort-by-btn">
                     <li><a href="">Home</a></li>
                     <li><a href="">Catalog</a></li>
                     <li><a href="">Old Wine</a></li>
                 </ul>
             </div>
             <span>
-                <label for="select111" class="sortBySelect">Sort By:</label>
-                <select id="select111">
+                <label for="sort-by-options" class="sort-by-list">Sort By:</label>
+                <select id="sort-by-options">
                     <option value="popularity">Popularity</option>
                     <option value="price">Price</option>
                 </select><i class="fa fa-caret-down"></i>
             </span>
         </div>
-        <div class="mainCenter">
-            <aside class="navBar">
+        <div class="page-contant">
+            <aside class="side-nav-bar">
                 <div>
                     <input id="collapsible" class="toggle" type="checkbox">
                     <label for="collapsible" class="lbl-toggle">Price</label>
                     <div class="collapsible-content">
                         <div class="content-inner">
-                            <input type="range" min="60" max="2000" value="600" />
+                            <input type="range" class="price-range" min="60" max="2000" value="600"/>
                         </div>
                     </div>
                 </div>
@@ -197,75 +200,75 @@
             <div class="productsContainerLine">
                 <article class="product">
                     <figure>
-                        <img class="productImg" src="media/bottle.png" alt="bottle" />
+                        <img class="product-img" src="media/bottle.png" alt="bottle" />
                     </figure>
-                    <div class="productDiscreption">
+                    <div class="product-discreption">
                         <h3>Blenders Pride</h3>
                         <!-- Why P? Maybe span? Something else? -->
                         <p>some text about the drink</p>
                         <p>Price: 250$</p>
-                        <button class="productButton">Buy Now</button>
+                        <button class="product-button">Buy Now</button>
                     </div>
                 </article>
                 <article class="product">
                     <figure>
-                        <img class="productImg" src="media/bottle.png" alt="bottle" />
+                        <img class="product-img" src="media/bottle.png" alt="bottle" />
                     </figure>
-                    <div class="productDiscreption">
+                    <div class="product-discreption">
                         <h3>Blenders Pride</h3>
                         <p>some text about the drink</p>
                         <p>Price: 250$</p>
-                        <button class="productButton">Buy Now</button>
+                        <button class="product-button">Buy Now</button>
                     </div>
                 </article>
                 <article class="product">
                     <figure>
-                        <img class="productImg" src="media/bottle.png" alt="bottle" />
+                        <img class="product-img" src="media/bottle.png" alt="bottle" />
                     </figure>
-                    <div class="productDiscreption">
+                    <div class="product-discreption">
                         <h3>Blenders Pride</h3>
                         <p>some text about the drink</p>
                         <p>Price: 250$</p>
-                        <button class="productButton">Buy Now</button>
+                        <button class="product-button">Buy Now</button>
                     </div>
                 </article>
             </div>
             <div class="productsContainerLine line-2">
                 <article class="product">
                     <figure>
-                        <img class="productImg" src="media/bottle.png" alt="bottle" />
+                        <img class="product-img" src="media/bottle.png" alt="bottle" />
                     </figure>
-                    <div class="productDiscreption">
+                    <div class="product-discreption">
                         <h3>Blenders Pride</h3>
                         <p>some text about the drink</p>
                         <p>Price: 250$</p>
-                        <button class="productButton">Buy Now</button>
+                        <button class="product-button">Buy Now</button>
                     </div>
                 </article>
                 <article class="product">
                     <figure>
-                        <img class="productImg" src="media/bottle.png" alt="bottle" />
+                        <img class="product-img" src="media/bottle.png" alt="bottle" />
                     </figure>
-                    <div class="productDiscreption">
+                    <div class="product-discreption">
                         <h3>Blenders Pride</h3>
                         <p>some text about the drink</p>
                         <p>Price: 250$</p>
-                        <button class="productButton">Buy Now</button>
+                        <button class="product-button">Buy Now</button>
                     </div>
                 </article>
                 <article class="product">
                     <figure>
-                        <img class="productImg" src="media/bottle.png" alt="bottle" />
+                        <img class="product-img" src="media/bottle.png" alt="bottle" />
                     </figure>
-                    <div class="productDiscreption">
+                    <div class="product-discreption">
                         <h3>Blenders Pride</h3>
                         <p>some text about the drink</p>
                         <p>Price: 250$</p>
-                        <button class="productButton">Buy Now</button>
+                        <button class="product-button">Buy Now</button>
                     </div>
                 </article>
             </div>
-            <div class="pageNav">
+            <div class="page-nav">
                 <button>Prev</button>
                 <ul class="pages">
                     <li><a href="">1</a></li>
@@ -281,8 +284,8 @@
         </div>
     </main>
     <footer>
-        <div class="line">
-            <nav class="footerNav">
+        <div class="buttom-personal-area-contianer">
+            <nav class="buttom-personal-area">
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">CATALOT</a></li>
@@ -298,8 +301,8 @@
                 </select><i class="fa fa-caret-down"></i>
             </span>
         </div>
-        <div class="footerButtom">
-            <ul class="footerButtomNavList">
+        <div class="buttom-shop-service">
+            <ul class="buttom-shop-service-nav">
                 <li><a href="">Payment</a></li>
                 <li><a href="">Shipping</a></li>
                 <li><a href="">Terms</a></li>

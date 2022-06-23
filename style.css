@@ -37,7 +37,7 @@ a:visited {
     text-decoration: none;
 }
 
-.topHeader {
+.nav-header {
     opacity: 50%;
     display: flex;
     justify-content: space-between;
@@ -45,43 +45,40 @@ a:visited {
     border-bottom: 1px solid #bebebe;
 }
 
-.aboutStore {
+.about-store {
     font-size: 16px;
     padding: 0;
 }
 
-.navBtnList {
+.shop-service {
     text-align: center;
     padding: 0px;
     margin: 0px;
 }
 
-.navBtnList li {
+.shop-service li {
     padding: 3px;
 }
 
-.navBtn ul {
-    padding: 0;
-}
-
-.top-lang-select {
+.top-lang-selector {
+    font-size: 16px;
     width: min-content;
     text-align: right;
 }
 
-.stLine {
+.cart-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.wine-logo {
+.wineshop-logo {
     padding-top: .5%;
     width: 15%;
     height: 10%;
 }
 
-.searchFilter {
+.search-filter {
     width: 50%;
     justify-content: space-between;
     align-items: center;
@@ -92,15 +89,11 @@ a:visited {
     box-shadow: 0 2px 6px 0 rgba(36, 13, 13, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 }
 
-.fa-search {
-    color: white;
-}
-
-.searchInput {
+.search-input {
     border: none;
 }
 
-.searchInput[type="text"] {
+.search-input[type="text"] {
     border-left: 2px solid #bebebe;
     padding-left: 1%;
     padding-top: 1%;
@@ -108,15 +101,19 @@ a:visited {
     margin: 1.5% 0;
 }
 
-.searchBtn {
+.search-btn {
     position: absolute;
     padding: 0.4% 3%;
-    top: 6.5%;
+    top: 7%;
     right: 28%;
     background-color: rgb(243, 177, 9);
     border-radius: 35px;
     box-shadow: 0 2px 6px 0 rgba(243, 177, 9, 0.6), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
+}
+
+.fa-search {
+    color: white;
 }
 
 .cart-items {
@@ -134,30 +131,22 @@ a:visited {
     margin-bottom: 1%;
 }
 
-/* 
-.left {
-    width: 45%;
-    display: inline;
-    float: left;
-} */
-
-.popularList {
-    /* margin-left: 8%; */
+.popular-filter-contianer {
     display: inline;
 }
 
-.popularList span {
-    opacity: 40%;
+.popular-filter-lable {
+    opacity: 50%;
     padding-left: 15px;
 }
 
-.popular {
+.blender-list {
     margin: 0%;
     display: inline;
     padding: 0;
 }
 
-.popular li {
+.blender-list li {
     padding-left: 30px;
 }
 
@@ -176,29 +165,22 @@ a:visited {
     padding: 0;
 }
 
-.centerMain {
-    /* position: relative; */
+.page-contianer {
     padding-left: 4%;
     background-color: rgb(246, 246, 246);
 }
 
-.mainImg img {
+.snacks-beer-img {
+    opacity: 95%;
     width: 100% !important;
     height: 45%;
-}
-
-.mainImg {
     position: absolute;
     right: 0;
     left: 0;
-    width: 100%;
-    height: 300px;
 }
 
-.centered {
-    /* change img */
+.snacks-beer-container {
     z-index: 1;
-    text-align: center;
     position: absolute;
     color: white;
     margin-top: 150px;
@@ -207,11 +189,17 @@ a:visited {
     font-size: 50px;
 }
 
-.sortBy {
+.snacks,
+.and,
+.beer {
+    text-align: center;
+}
+
+.sort-by-filter {
     z-index: 1;
     position: absolute;
-    top: 420px;
     padding: 12px 30px;
+    top: 64%;
     right: 2%;
     display: flex;
     justify-content: space-between;
@@ -222,34 +210,34 @@ a:visited {
     box-shadow: 0 2px 6px 0 rgba(36, 13, 13, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 }
 
-.imgNav {
+.sort-by-btn {
     opacity: 50%;
     padding: 0;
     margin: 0;
 }
 
-.imgNav>li:not(:first-child):before {
+.sort-by-btn>li:not(:first-child):before {
     content: "-";
 }
 
-.imgNav li:hover {
+.sort-by-btn li:hover {
     cursor: pointer;
 }
 
-.sortBySelect {
+.sort-by-list {
     opacity: 50%;
 }
 
-#select111 {
+#sort-by-options {
     color: blue;
 }
 
-.mainCenter {
+.page-contant {
     position: relative;
-    padding-top: 350px;
+    padding-top: 60%;
 }
 
-.navBar {
+.side-nav-bar {
     position: absolute;
     width: 27%;
     background-color: rgb(255, 255, 255);
@@ -258,26 +246,26 @@ a:visited {
     display: inline;
 }
 
-input[type="range"] {
+.price-range {
     width: 50%;
     position: relative;
     margin-left: 22%;
     margin-bottom: 5%;
 }
 
-input[type="range"]::before,
-input[type="range"]::after {
+.price-range::before,
+.price-range::after {
     position: absolute;
     display: inline-block;
 }
 
-input[type="range"]::before {
+.price-range::before {
     content: attr(min);
     left: 0%;
     transform: translateX(calc(-100% - 5px));
 }
 
-input[type="range"]::after {
+.price-range::after {
     content: attr(max);
     right: 0%;
     transform: translateX(calc(100% + 5px));
@@ -375,7 +363,7 @@ input[type="range"]::after {
     border: .5px solid red;
 }
 
-.productImg {
+.product-img {
     max-width: 100%;
     max-height: 100%;
     display: block;
@@ -384,13 +372,13 @@ input[type="range"]::after {
     margin-right: auto;
 }
 
-.productDiscreption {
+.product-discreption {
     position: relative;
     padding: 10px;
     text-align: center;
 }
 
-.productButton {
+.product-button {
     width: 70%;
     position: absolute;
     padding: 3% 0%;
@@ -403,7 +391,7 @@ input[type="range"]::after {
     border-radius: 25px;
 }
 
-.pageNav {
+.page-nav {
     opacity: 70%;
     margin-left: 28%;
     width: 70%;
@@ -417,7 +405,7 @@ input[type="range"]::after {
     background-color: rgb(255, 255, 255);
 }
 
-.pageNav ul {
+.page-nav ul {
     padding: 0;
 }
 
@@ -429,44 +417,40 @@ input[type="range"]::after {
     padding-left: 4%;
 }
 
-.line {
+.buttom-personal-area-contianer {
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: .5%;
 }
 
-.footerNav ul {
+.buttom-personal-area ul {
     padding: 0px;
     margin: 0px;
 }
 
-.footerNav li:not(:last-child) {
+.buttom-personal-area li:not(:last-child) {
     padding-right: 35px;
-}
-
-.footerButtom {
-    padding-top: 1%;
-    opacity: 50%;
-    border-top: .1px solid #bebebe;
 }
 
 .buttom-lang-select {
     opacity: 50%;
 }
 
-.footerButtomNavList {
+.buttom-shop-service{
+    padding: .5% 0;
+    opacity: 50%;
+    border-top: .1px solid #bebebe;
+}
+
+.buttom-shop-service-nav {
     display: inline;
     padding: 0;
     margin: 0;
 }
 
-.footerButtomNavList li:not(:last-child) {
+.buttom-shop-service-nav li:not(:last-child) {
     padding-right: 3%;
-}
-
-.footerNavBtnList li {
-    padding: 13px;
 }
 
 .copyrights {
@@ -478,16 +462,22 @@ input[type="range"]::after {
         display: inline;
     }
 
-    .sortBy {
-        top: 390px;
-    }
-
-    .searchBtn {
+    .search-btn {
         top: 5.5%;
         right: 25%;
     }
 
-    .navBar {
+    .snacks-beer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .beers,
+    .and {
+        padding-left: 5%;
+    }
+
+    .side-nav-bar {
         width: 20%;
     }
 
@@ -503,20 +493,11 @@ input[type="range"]::after {
         margin-left: 3%;
     }
 
-    .product{
+    .product {
         margin-bottom: 5%;
     }
-}
 
-@media screen and (min-width: 1300px) {
-
-    .sortBy {
-        top: 420px;
+    .page-contant {
+        padding-top: 29%;
     }
-
-    .searchBtn {
-        top: 7.5%;
-        right: 25%;
-    }
-
 }
